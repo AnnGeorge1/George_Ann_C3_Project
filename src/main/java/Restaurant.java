@@ -68,4 +68,15 @@ public class Restaurant {
     public Object calculateTotalOfItems(List<String> cart) {
         return 0;
     }
+
+    public int getTotalOfItems(List<String> itemList) {
+        int total = 0;
+        for (String itemName : itemList) {
+            Item item = findItemByName(itemName);
+            if(null != item)
+                total += item.getAmount();
+        }
+        return total;
+    }
 }
+
