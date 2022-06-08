@@ -64,4 +64,8 @@ public class Restaurant {
         return name;
     }
 
+
+    public Object calculateTotalOfItems(List<String> cart) {
+        return 0;
+    }
 }
